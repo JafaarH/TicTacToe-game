@@ -25,12 +25,12 @@ const Game: React.FC<props>= ({state, setState, go, setGo, id, item, winningMass
     const taken = !!state[id]
     
     if(!taken) {
-        if(go === "cross") {
-            handleChangeState("cross")
-            setGo("circle")
-        }else if(go === "circle") {
-            handleChangeState("circle")
-            setGo("cross")
+        if(go === "Cross") {
+            handleChangeState("Cross")
+            setGo("Circle")
+        }else if(go === "Circle") {
+            handleChangeState("Circle")
+            setGo("Cross")
         }
     }
 
